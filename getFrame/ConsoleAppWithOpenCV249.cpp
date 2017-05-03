@@ -64,12 +64,13 @@ string getFileName(int argc, char* argv[]){
 		}
 	}
 	else{
-		cout << "[Video Path][output folder name][needResize][skipPause]" << endl
-			<< "-------------------------------------------------------" << endl
-			<< "Video Path = 影片路徑" << endl
-			<< "output folder name = 輸出資料夾名稱" << endl
-			<< "needResize = -r 是否需要壓縮至272p" << endl
-			<< "skipPause = -f 是否需要壓縮至272p" << endl
+		cout << "getframe source [interval][-r][-f]" << endl
+			<< endl
+			<< "  source	影片路徑" << endl
+			<< "  folder	輸出資料夾名稱" << endl
+			<< "  interval	間隔數字，預設為15" << endl
+			<< "  -r		是否需要壓縮至272p" << endl
+			<< "  -f		是否要忽略程式暫停" << endl
 			<< "-------------------------------------------------------" << endl
 			<< "拖曳影片檔案至視窗，或是輸入檔案路徑：" << endl;
 		getline(cin, temp);
